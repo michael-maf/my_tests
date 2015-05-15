@@ -1,9 +1,6 @@
 var sel = require('./../tests/selector_module.js');
 var log_sel = sel.login;
 
-var username = "johnnytests@matterandform.net";
-var password = "ReadyPlayerOne";
-
 exports.command = function(username, password, callback) {
 	var self = this;
 	this

@@ -6,23 +6,10 @@
 var sel = require('./selector_module.js');
 var log_sel = sel.login;
 
-var username = "johnnytests@matterandform.net";
-var password = "ReadyPlayerOne";
-
-var login_johnny = function(browser) {
-	browser
-		.url("http://alpha-preview.cashew3d.com/login")
-		.waitForElementVisible('body', 1000, function() {
-			browser.login(username, password);
-		})
-		.pause(1000);
-};
-
 module.exports = {
 	'Log in': function(browser) {
-		login_johnny(browser);
 		browser
+			.loginJohnny()
 			.end();
-	},
-	login_johnny: login_johnny
+	}
 };

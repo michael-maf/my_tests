@@ -6,22 +6,12 @@
 var sel = require('./selector_module');
 var log_sel = sel.login;
 
-var username = "johnnytests@matterandform.net";
-var password = "ReadyPlayerOne";
-
-var login_johnny = function(browser) {
-	browser.login(username, password);
-};
+var login_johnny = require('./login_module').login_johnny;
 
 module.exports = {
 	'Form': function(browser) {
+		login_johnny(browser);		
 		browser
-			.url("http://alpha-preview.cashew3d.com/login")
-			.waitForElementVisible('body', 1000, function() {
-				browser.assert.title('Log in');
-			})
-			.login(username, password)
-			.pause(1000)
 			.waitForElementVisible(sel.profile.article.getNth_article(1), 1000, function() {
 				browser.click(sel.profile.article.getNth_article(1));
 			})
@@ -35,5 +25,3 @@ module.exports = {
 			.end();
 	}
 };
-
-exports.login_johnny = login_johnny;

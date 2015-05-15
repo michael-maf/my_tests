@@ -140,7 +140,7 @@ var upload = {
 		close_button: "a[data-hook='close-button']",
 		dropzone_input: "input[type='file'][name='files']",
 		dropzone_text: "span[data-hook='label']",
-		upload_button: "div[data-hook='form'] > button",
+		upload_button: "div[class='drop'] > button",
 		article: newArticle("div[data-hook='files']"),
 		getNthRemove_button: function(n) {
 			return this.article.nth_article(n) + " > button[data-hook='remove']";
@@ -152,7 +152,8 @@ var upload = {
 	details_prompt: {
 		form: detailsForm,
 		close_button: "a[data-hook='close-button']",
-		save_button: "button[data-hook='save']"
+		save_button: "button[data-hook='save']",
+		waiting_text: "section[class='creation-edit'] > header > h3"
 	}
 };
 

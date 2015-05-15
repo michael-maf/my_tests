@@ -42,7 +42,10 @@ var detailsForm = {
 		public_button: "input[type='radio'][value='1']",
 		private_button: "input[type='radio'][value='-1']"
 	},
-	license: "select[name='license']"
+	license: "select[name='license']",
+	getNthLicense_link: function(n) {
+		return this.license + " > option:nth-child(" + n + ")";
+	}
 };
 
 //header and footer

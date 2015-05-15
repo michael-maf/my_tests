@@ -1,0 +1,165 @@
+/*
+	Michael Bahng 5/14/2015
+	List of css selectors for the Alpha cashew website.
+*/
+
+//article generator
+var newArticle = function(parent) {
+	return {
+		getNth_article: function(n) { 
+			return parent + " > article:nth-child(" + n + ")"; 
+		},
+		getNthArticle_text: function(n) {
+			return this.getNth_article(n) + " > div.creation-preview-overlay > div > h4 > span";
+		},
+		first_article: function() { this.getNth_article(1); },
+		firstArticle_text: function() { this.getNthArticle_text(1); }
+	};
+};
+
+var newTags = function(parent) {
+	return {
+		addTag_button: parent + " > button:nth-child(1)",
+		//the first child is the + button, hence the +1.
+		getNthTag_field: function(n) {
+			return parent + " > div:nth-child(" + (n + 1) + ") > div > input";
+		},
+		getNthDelete_button: function(n) {
+			return parent + " > div:nth-child(" + (n + 1) + ") > div > button";
+		},
+		getNthTag_button: function(n) {
+			return parent + " > a:nth-child(" + n + ")";
+		}
+	}
+};
+
+//details form template
+var detailsForm = {
+	title_field: "input[name='title']",
+	description_field: "textarea[name='description']",
+	tags: newTags("div[data-hook='field-container']"),
+	privacy: {
+		public_button: "input[type='radio'][value='1']",
+		private_button: "input[type='radio'][value='-1']"
+	},
+	license: "select[name='license']"
+};
+
+//header and footer
+var header = {
+	logo_link: "div[class='logo-graphic']",
+	explore_link: "a[href='/creations']",
+	upload_link: "a[href='/creations/new']",
+
+	login_link: "a[href='/login']",
+	avatar_link: "img[data-hook='user.thumbnail']",
+	username_link: "span[data-hook='user.display_name']"
+};
+
+var footer = {
+	version_text: "#bottom > p:nth-child(1)",
+	feedback_link: "a[data-hook='feedback_link']"
+};
+
+//pages by url
+var creations = {
+	creations_header: "div[class='section-heading'] > h2",
+	article: newArticle("div[data-hook='creations']"),
+	creations_creation: {
+		preview: {
+			expand_button: "button[data-hook='expand-toggle']",
+			quality: {
+				quality_button: "div.creation-preview.stamp > div.creation-canvas-controls > button.drop-target",
+				quality_div: "div[class='quality-dropdown']",
+				getNth_button: function(n) {
+					return this.quality_div + " > button:nth-child(" + n + ")"; 
+				}
+			}
+		},
+		action: {
+			nice_button: "div[data-hook='action-nice']",
+			comment_button: "div[data-hook='action-comment']",
+			share_button: "div[data-hook='action-social']",
+			save_button: "div[data-hook='action-save']",
+			nice_prompt: {
+				niceCount_button: "div[data-hook='action-nice'] > span > span:nth-child(2)",
+				getNthLike_link: function(n) {
+					return "div[class='user-list'] > article:nth-child(" + n + ") > a";
+				},
+				close_button: "a[data-hook='close-button']"
+			}
+		},
+		info: {
+			info_div: "div[class='creation-info-details-holder']",
+			title_text: "span[data-hook='title']",
+			edit: {
+				edit_button: "button[data-hook='edit']",
+				cancel_button: "button[data-hook='cancel']",
+				save_button: "button[data-hook='save']",
+
+				form: detailsForm
+			},
+			description_text: "p[data-hook='description']",
+			tags: newTags("div[data-hook='tags']"),
+			geometryCount_text: "span[data-hook='numFaces']",
+			date_text: "time[data-hook='date']",
+			license_link: "h4[data-hook='license']",
+			author: {
+				author_link: "a[data-hook='user.href']",
+				authorName_text: "span[data-hook='user.full_name']",
+				follow_button: "button[data-hook='follow-user']"
+			}
+		}
+	}
+};
+
+var login = {
+	login_header: "div[class='section-heading'] > h2",
+	email_field: "input[name='email']",
+	password_field: "input[name='password']",
+	login_button: "button[data-hook='submit']",
+	login_prompt: {
+		close_button: "button[data-hook='close-button']"
+	}
+};
+
+var profile = {
+	avatar_image: "img[data-hook='avatar]'",
+	fullname_text: "div[class='user-info-name-holder] > h2 > span[data-hook='full_name']",
+	creationsCount_text: "h3[data-hook='creations_count']",
+	creatingSince_text: "time[data-hook='date_created']",
+	//proudest creation? about?
+	logout_button: "a[href='/logout']",
+	article: newArticle("div[data-hook='creations']")
+};
+
+var upload = {
+	upload_prompt: {
+		upload_header: "header[class='info-row'] > h3",
+		close_button: "a[data-hook='close-button']",
+		dropzone_input: "input[type='file'][name='files']",
+		dropzone_span: "span[data-hook='label']",
+		upload_button: "div[data-hook='form'] > button",
+		article: newArticle("div[data-hook='files']"),
+		getNthRemove_button: function(n) {
+			return this.article.nth_article(n) + " > button[data-hook='remove']";
+		},
+		getNthFilename_button: function(n) {
+			return this.article.nth_article(n) + " > span[data=hook=name]";
+		}
+	},
+	details_prompt: {
+		form: detailsForm,
+		close_button: "a[data-hook='close-button']",
+		save_button: "button[data-hook='save']"
+	}
+};
+
+module.exports = {
+	header: header,
+	footer: footer,
+	creations: creations,
+	login: login,
+	profile: profile,
+	upload: upload,
+};

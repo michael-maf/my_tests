@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="profile_module"
+    errors="1" failures="0" hostname="" id="" package="profile_module" skipped="0"
+    tests="1" time="7.497" timestamp="Fri, 15 May 2015 02:36:51 GMT">
+  
+    <testcase name="Get Creation Test" time="7.497" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+      <system-err>
+        Unable to locate element: &quot;button[data-hook=&#39;close-button&#39;]&quot; using: css selector
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>

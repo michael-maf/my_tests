@@ -1,4 +1,4 @@
-var sel = require('./../tests/selector_module.js');
+var sel = require('./../assets/selector_module.js');
 
 var username = "johnnytests@matterandform.net";
 var password = "ReadyPlayerOne";

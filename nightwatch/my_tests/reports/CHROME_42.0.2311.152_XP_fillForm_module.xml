@@ -5,9 +5,9 @@
 
   <testsuite name="fillForm_module"
     errors="0" failures="0" hostname="" id="" package="fillForm_module" skipped="0"
-    tests="1" time="14.78" timestamp="Fri, 15 May 2015 21:53:49 GMT">
+    tests="1" time="13.25" timestamp="Fri, 15 May 2015 22:23:00 GMT">
   
-    <testcase name="Form" time="14.78" assertions="18">
+    <testcase name="Form" time="13.25" assertions="18">
 
     
 

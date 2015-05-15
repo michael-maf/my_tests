@@ -1,7 +1,9 @@
-var sel = require('./../tests/selector_module.js');
+var sel = require('./../assets/selector_module.js');
 
 exports.command = function(callback) {
 	var self = this;
+
+	this.
 
 
 

@@ -3,15 +3,13 @@
 	functions for the login page for the Alpha cashew website.
 */
 
-var sel = require('./selector_module');
+var sel = require('./../assets/selector_module');
 var log_sel = sel.login;
-
-var login_johnny = require('./login_module').login_johnny;
 
 module.exports = {
 	'Form': function(browser) {
-		login_johnny(browser);		
 		browser
+			.loginJohnny()
 			.waitForElementVisible(sel.profile.article.getNth_article(1), 1000, function() {
 				browser.click(sel.profile.article.getNth_article(1));
 			})

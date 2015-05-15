@@ -1,6 +1,4 @@
-var sel = require('./selector_module.js');
-
-var login_johnny = require('./login_module').login_johnny;
+var sel = require('./../assets/selector_module.js');
 
 var filepath = require('path').resolve("C:\\Users\\Michael\\Desktop\\nightwatch-testing\\assets\\3D_models\\head.obj");
 
@@ -15,8 +13,8 @@ var formObj = {
 
 module.exports = {
 	'Upload': function(browser) {
-		login_johnny(browser);
 		browser
+			.loginJohnny()
 			.waitForElementVisible(sel.header.upload_link, 1000, function() {
 				browser.click(sel.header.upload_link);
 			})

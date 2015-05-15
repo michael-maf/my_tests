@@ -1,4 +1,4 @@
-var sel = require('./../tests/selector_module.js');
+var sel = require('./../assets/selector_module.js');
 var upl = sel.upload.upload_prompt;
 
 exports.command = function(fileIn, formIn, callback) {

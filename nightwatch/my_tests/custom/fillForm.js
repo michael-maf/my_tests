@@ -1,10 +1,25 @@
 var sel = require('./../tests/selector_module.js');
-
 var form = sel.detailsForm;
 
 //string, string, string[], boolean, int
 exports.command = function(title, description, tags, public, license, callback) {
 	var self = this;
+	var tagRecurse = function(count, target, that) {
+		if(parseInt(count) < parseInt(target)) {
+			that.click(form.tags.addTag_button, function() {
+				that.waitForElementVisible(form.tags.getNthTag_field(count), 3000, function() {
+					that.clearValue(form.tags.getNthTag_field(count), function() {
+						that.setValue(form.tags.getNthTag_field(count), tags[(count-1)], function() {
+							//recurse...
+							console.log(count);
+							tagRecurse(count+1, target, that);
+						});
+					});
+				});
+			});
+		}	
+	};
+
 	this
 		//title
 		.waitForElementVisible(form.title_field, 1000, function() {
@@ -20,16 +35,8 @@ exports.command = function(title, description, tags, public, license, callback) 
 		})
 		//tags
 		.waitForElementVisible(form.tags.getNthTag_field(1), 1000, function() {
-			for(var i = 0; i < tags.length; i++) {
-				this.click(form.tags.addTag_button, function() {
-					this.waitForElementVisible(form.tags.getNthTag_field(i), (1000*i), function() {
-						console.log("num:" +  i);
-						this.clearValue(form.tags.getNthTag_field(i), function() {
-							this.setValue(form.tags.getNthTag_field(i), tags[i]);
-						});
-					});
-				});
-			}
+			if(tags)
+				tagRecurse(1, tags.length, this);			
 		})
 		//privacy
 		.waitForElementVisible(form.privacy.public_button, 1000, function() {

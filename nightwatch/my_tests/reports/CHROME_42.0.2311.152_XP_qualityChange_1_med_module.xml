@@ -5,9 +5,9 @@
 
   <testsuite name="qualityChange_1_med_module"
     errors="0" failures="0" hostname="" id="" package="qualityChange_1_med_module" skipped="0"
-    tests="1" time="7.451" timestamp="Fri, 15 May 2015 22:31:10 GMT">
+    tests="1" time="8.250" timestamp="Fri, 15 May 2015 22:34:03 GMT">
   
-    <testcase name="Select from creations grid: 1; Change quality: medium" time="7.451" assertions="4">
+    <testcase name="Select from creations grid: 1; Change quality: medium" time="8.250" assertions="4">
 
     
 

@@ -28,7 +28,7 @@ module.exports = {
 				browser.click(sel.creations.creations_creation.info.edit.edit_button);
 			})
 			.waitForElementVisible(sel.creations.creations_creation.info.edit.save_button, 1000, function() {
-				browser.fillForm("Potato", "Tomato", ['a', 'b', 'c'], false, 2);
+				browser.fillForm("Potato", "Tomato", ['a', 'b', 'c', 'd', 'e'], false, 2);
 			})
 			.pause(1000)
 			.end();

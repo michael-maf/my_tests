@@ -22,7 +22,7 @@ exports.command = function(title, description, tags, public, license, callback) 
 		.waitForElementVisible(form.tags.getNthTag_field(1), 1000, function() {
 			for(var i = 0; i < tags.length; i++) {
 				this.click(form.tags.addTag_button, function() {
-					this.waitForElementVisible(form.tags.getNthTag_field(i), 1000, function() {
+					this.waitForElementVisible(form.tags.getNthTag_field(i), (1000*i), function() {
 						console.log("num:" +  i);
 						this.clearValue(form.tags.getNthTag_field(i), function() {
 							this.setValue(form.tags.getNthTag_field(i), tags[i]);

@@ -5,9 +5,9 @@
 
   <testsuite name="fillForm_module"
     errors="0" failures="1" hostname="" id="" package="fillForm_module" skipped="0"
-    tests="1" time="11.49" timestamp="Fri, 15 May 2015 18:39:48 GMT">
+    tests="1" time="15.82" timestamp="Fri, 15 May 2015 18:44:43 GMT">
   
-    <testcase name="Form" time="11.49" assertions="14">
+    <testcase name="Form" time="15.82" assertions="14">
 
     
 
@@ -33,7 +33,7 @@
 
     
 
-      <failure message="Timed out while waiting for element &lt;div[data-hook=&#39;field-container&#39;] &gt; div:nth-child(4) &gt; div &gt; input&gt; to be present for 1000 milliseconds.">Timed out while waiting for element &lt;div[data-hook=&#39;field-container&#39;] &gt; div:nth-child(4) &gt; div &gt; input&gt; to be present for 1000 milliseconds.: Expected &quot;visible&quot; but got: &quot;not found&quot;
+      <failure message="Timed out while waiting for element &lt;div[data-hook=&#39;field-container&#39;] &gt; div:nth-child(6) &gt; div &gt; input&gt; to be present for 5000 milliseconds.">Timed out while waiting for element &lt;div[data-hook=&#39;field-container&#39;] &gt; div:nth-child(6) &gt; div &gt; input&gt; to be present for 5000 milliseconds.: Expected &quot;visible&quot; but got: &quot;not found&quot;
     at F.WaitForElement.fail (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\api\commands\_waitForElement.js:194:15)
     at F.WaitForElementPresent.elementNotFound (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\api\commands\waitForElementPresent.js:57:15)
     at Object.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\api\commands\_waitForElement.js:221:17)

@@ -11,9 +11,7 @@ var newArticle = function(parent) {
 		},
 		getNthArticle_text: function(n) {
 			return this.getNth_article(n) + " > div.creation-preview-overlay > div > h4 > span";
-		},
-		first_article: function() { this.getNth_article(1); },
-		firstArticle_text: function() { this.getNthArticle_text(1); }
+		}
 	};
 };
 

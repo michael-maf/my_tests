@@ -5,15 +5,17 @@ var form = sel.detailsForm;
 exports.command = function(title, description, tags, public, license, callback) {
 	var self = this;
 	var tagRecurse = function(count, target, that) {
-		if(parseInt(count) < parseInt(target)) {
-			that.click(form.tags.addTag_button, function() {
-				that.waitForElementVisible(form.tags.getNthTag_field(count), 3000, function() {
-					that.clearValue(form.tags.getNthTag_field(count), function() {
-						that.setValue(form.tags.getNthTag_field(count), tags[(count-1)], function() {
-							//recurse...
-							console.log(count);
+		if(parseInt(count) <= parseInt(target)) {
+			that.waitForElementVisible(form.tags.getNthTag_field(count), 3000, function() {
+				that.clearValue(form.tags.getNthTag_field(count), function() {
+					that.setValue(form.tags.getNthTag_field(count), tags[(count-1)], function() {
+						if(parseInt(count) === target)
 							tagRecurse(count+1, target, that);
-						});
+						else {
+							that.click(form.tags.addTag_button, function() {
+								tagRecurse(count+1, target, that);
+							});
+						}
 					});
 				});
 			});

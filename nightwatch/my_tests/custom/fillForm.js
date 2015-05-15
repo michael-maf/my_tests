@@ -1,4 +1,4 @@
-var sel = require('./../tests/selector_module.js');
+var sel = require('./../tests/selector_module');
 var form = sel.detailsForm;
 
 //string, string, string[], boolean, int

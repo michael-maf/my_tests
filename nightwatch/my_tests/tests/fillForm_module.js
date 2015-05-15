@@ -3,7 +3,7 @@
 	functions for the login page for the Alpha cashew website.
 */
 
-var sel = require('./selector_module.js');
+var sel = require('./selector_module');
 var log_sel = sel.login;
 
 var username = "johnnytests@matterandform.net";
@@ -35,3 +35,5 @@ module.exports = {
 			.end();
 	}
 };
+
+exports.login_johnny = login_johnny;

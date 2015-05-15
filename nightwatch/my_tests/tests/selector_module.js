@@ -88,6 +88,11 @@ var creations = {
 					return "div[class='user-list'] > article:nth-child(" + n + ") > a";
 				},
 				close_button: "a[data-hook='close-button']"
+			},
+			edit: {
+				delete_button: "div[data-hook='action-delete']",
+				replace_button: "div[data-hook='action-replace-model']",
+				editPreview_button: "div[data-hook='action-edit-preview']"
 			}
 		},
 		info: {

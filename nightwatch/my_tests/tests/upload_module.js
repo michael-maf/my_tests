@@ -3,6 +3,8 @@ var sel = require('./selector_module.js');
 var username = "johnnytests@matterandform.net";
 var password = "ReadyPlayerOne";
 
+var filepath = require('path').resolve("C:\\Users\\Michael\\Desktop\\nightwatch-testing\\assets\\3D_models\\head.obj");
+
 var formObj = {
 	title: "Waffle",
 	description: "A WAFFLE",
@@ -24,10 +26,8 @@ module.exports = {
 			.waitForElementVisible(sel.header.upload_link, 1000, function() {
 				browser.click(sel.header.upload_link);
 			})
-			.upload("C:\\Users\\Michael\\Desktop\\nightwatch-testing\\assets\\3D_models\\head.obj", formObj, function() {
-				browser.pause(100000000);
-			})
-			.waitForElementNotVisible("#overlay > div > div > div > section > header > h3")
+			.upload(filepath, formObj)
+			.waitForElementNotPresent(sel.upload.details_prompt.waiting_text, 30000)
 			.assert.title(formObj.title)
 			.end();
 	}

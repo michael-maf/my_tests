@@ -6,7 +6,8 @@ exports.command = function(fileIn, formIn, callback) {
 	this
 		.waitForElementVisible(upl.dropzone_text, 1000)
 		.setValue(upl.dropzone_input, fileIn)
-		.waitForElementVisible(upl.upload_button, 2000, function() {
+		.pause(1000)
+		.waitForElementVisible(upl.upload_button, 1000, function() {
 			this.click(upl.upload_button);
 		})
 		.waitForElementVisible(sel.upload.details_prompt.save_button, 10000, function() {

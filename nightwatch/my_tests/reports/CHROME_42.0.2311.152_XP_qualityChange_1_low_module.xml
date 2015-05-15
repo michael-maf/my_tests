@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="qualityChange_1_low_module"
+    errors="0" failures="0" hostname="" id="" package="qualityChange_1_low_module" skipped="0"
+    tests="1" time="8.098" timestamp="Fri, 15 May 2015 22:31:02 GMT">
+  
+    <testcase name="Select from creations grid: 1; Change quality: low" time="8.098" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

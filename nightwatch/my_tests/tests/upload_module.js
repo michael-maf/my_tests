@@ -20,7 +20,6 @@ module.exports = {
 			})
 			.upload(filepath, formObj)
 			.waitForElementNotPresent(sel.upload.details_prompt.waiting_text, 30000)
-			.assert.title(formObj.title)
 			.end();
 	}
 };

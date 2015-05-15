@@ -1,4 +1,4 @@
-var sel = require('./selector_module.js');
+var sel = require('./../assets/selector_module.js');
 
 module.exports = {
   "Select from creations grid: 1; Change quality: medium" : function (client) {

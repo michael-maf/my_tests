@@ -71,7 +71,8 @@ var creations = {
 			bigger_button: "div.creation-preview.stamp > div.creation-canvas-controls > button:nth-child(1)",
 			smaller_button: "div.canvas-holder > div > button:nth-child(1)",
 			quality: {
-				quality_button: "div.creation-preview.stamp > div.creation-canvas-controls > button.drop-target",
+				qualityBigger_button: "div.creation-preview.stamp > div.creation-canvas-controls > button.drop-target",
+				qualitySmaller_button: "div.canvas-holder > div > button.drop-target",
 				quality_div: "div[class='quality-dropdown']",
 				getNth_button: function(n) {
 					return this.quality_div + " > button:nth-child(" + n + ")"; 
@@ -171,8 +172,6 @@ module.exports = {
 	creations: creations,
 	login: login,
 	profile: profile,
-	upload: upload,
-
-
+	upload: upload
 };
 

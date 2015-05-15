@@ -1,5 +1,4 @@
 var sel = require('./../tests/selector_module.js');
-var log_sel = sel.login;
 
 var username = "johnnytests@matterandform.net";
 var password = "ReadyPlayerOne";

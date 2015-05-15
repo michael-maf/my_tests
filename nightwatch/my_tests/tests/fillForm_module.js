@@ -21,8 +21,8 @@ module.exports = {
 				browser.assert.title('Log in');
 			})
 			.login(username, password)
-			.waitForElementVisible(sel.profile.article.first_article, 1000, function() {
-				browser.click(sel.profile.article.first_article);
+			.waitForElementVisible(sel.profile.article.getNth_article(1), 1000, function() {
+				browser.click(sel.profile.article.getNth_article(1));
 			})
 			.waitForElementVisible(sel.creations.creations_creation.info.edit.edit_button, 1000, function() {
 				browser.click(sel.creations.creations_creation.info.edit.edit_button);

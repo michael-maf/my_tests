@@ -23,6 +23,7 @@ exports.command = function(title, description, tags, public, license, callback) 
 			for(var i = 0; i < tags.length; i++) {
 				this.click(form.tags.addTag_button, function() {
 					this.waitForElementVisible(form.tags.getNthTag_field(i), 1000, function() {
+						console.log("num:" +  i);
 						this.clearValue(form.tags.getNthTag_field(i), function() {
 							this.setValue(form.tags.getNthTag_field(i), tags[i]);
 						});
@@ -45,7 +46,6 @@ exports.command = function(title, description, tags, public, license, callback) 
 				this.click(form.getNthLicense_link(license));
 			});
 		});
-
 	if(typeof callback === "function")
 		callback.call(self);
 

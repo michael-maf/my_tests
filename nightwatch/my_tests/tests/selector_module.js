@@ -159,6 +159,7 @@ var upload = {
 module.exports = {
 	header: header,
 	footer: footer,
+	detailsForm: detailsForm,
 	creations: creations,
 	login: login,
 	profile: profile,

@@ -15,6 +15,9 @@ exports.command = function(callback) {
 				this.acceptAlert();
 			});
 		})
+		.waitForElementVisible(editAction.deleteConfirm_button, 1000, function() {
+			this.click(editAction.deleteConfirm_button);
+		})
 		.pause(2000);
 
 

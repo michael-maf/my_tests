@@ -95,7 +95,7 @@ var creations = {
 				delete_button: "div[data-hook='action-delete']",
 				replace_button: "div[data-hook='action-replace-model']",
 				editPreview_button: "div[data-hook='action-edit-preview']",
-				delete_confirm: "button[data-hook='close-button']"
+				deleteConfirm_button: "button[data-hook='close-button']"
 			}
 		},
 		info: {

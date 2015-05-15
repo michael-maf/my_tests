@@ -139,7 +139,7 @@ var upload = {
 		upload_header: "header[class='info-row'] > h3",
 		close_button: "a[data-hook='close-button']",
 		dropzone_input: "input[type='file'][name='files']",
-		dropzone_span: "span[data-hook='label']",
+		dropzone_text: "span[data-hook='label']",
 		upload_button: "div[data-hook='form'] > button",
 		article: newArticle("div[data-hook='files']"),
 		getNthRemove_button: function(n) {

@@ -68,7 +68,8 @@ var creations = {
 	article: newArticle("div[data-hook='creations']"),
 	creations_creation: {
 		preview: {
-			expand_button: "button[data-hook='expand-toggle']",
+			bigger_button: "div.creation-preview.stamp > div.creation-canvas-controls > button:nth-child(1)",
+			smaller_button: "div.canvas-holder > div > button:nth-child(1)",
 			quality: {
 				quality_button: "div.creation-preview.stamp > div.creation-canvas-controls > button.drop-target",
 				quality_div: "div[class='quality-dropdown']",
@@ -92,7 +93,8 @@ var creations = {
 			edit: {
 				delete_button: "div[data-hook='action-delete']",
 				replace_button: "div[data-hook='action-replace-model']",
-				editPreview_button: "div[data-hook='action-edit-preview']"
+				editPreview_button: "div[data-hook='action-edit-preview']",
+				delete_confirm: "button[data-hook='close-button']"
 			}
 		},
 		info: {
@@ -170,4 +172,7 @@ module.exports = {
 	login: login,
 	profile: profile,
 	upload: upload,
+
+
 };
+

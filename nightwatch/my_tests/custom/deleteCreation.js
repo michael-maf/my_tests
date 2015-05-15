@@ -1,11 +1,21 @@
 var sel = require('./../assets/selector_module.js');
 
 var info = sel.creations.creations_creation.info;
-var edit = sel.creations.creations_creation.action.edit;
+var editAction = sel.creations.creations_creation.action.edit;
 
 exports.command = function(callback) {
 	var self = this;
 
+	this
+		.waitForElementVisible(info.edit.edit_button, 1000, function() {
+			this.click(info.edit.edit_button);
+		})
+		.waitForElementVisible(editAction.delete_button, 1000, function() {
+			this.click(editAction.delete_button, function() {
+				this.acceptAlert();
+			});
+		})
+		.pause(2000);
 
 
 	if(typeof callback === "function")

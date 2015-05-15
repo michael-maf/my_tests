@@ -5,9 +5,15 @@
 
   <testsuite name="deleteCreation_module"
     errors="0" failures="0" hostname="" id="" package="deleteCreation_module" skipped="0"
-    tests="1" time="9.330" timestamp="Fri, 15 May 2015 22:33:13 GMT">
+    tests="1" time="13.78" timestamp="Fri, 15 May 2015 23:21:12 GMT">
   
-    <testcase name="Delete" time="9.330" assertions="6">
+    <testcase name="Delete" time="13.78" assertions="9">
+
+    
+
+    
+
+    
 
     
 

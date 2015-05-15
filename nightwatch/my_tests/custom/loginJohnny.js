@@ -9,7 +9,8 @@ exports.command = function(callback) {
 	this
 		.url("http://alpha-preview.cashew3d.com/login")
 		.waitForElementVisible('body', 1000)
-		.login(username, password);
+		.login(username, password)
+		.assert.title('Profile');
 
 	if(typeof callback === "function")
 		callback.call(self);

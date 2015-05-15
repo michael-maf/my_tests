@@ -21,9 +21,6 @@ exports.command = function(username, password, callback) {
 			if(present)
 				this.click(log_sel.login_prompt.close_button);
 		})
-		.waitForElementNotPresent(log_sel.login_prompt.close_button, 5000, function() {
-			this.assert.title('Profile')
-		})
 		.pause(1000);
 
 	if(typeof callback === "function")

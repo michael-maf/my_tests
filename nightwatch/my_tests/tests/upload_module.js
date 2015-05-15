@@ -1,7 +1,6 @@
 var sel = require('./selector_module.js');
 
-var username = "johnnytests@matterandform.net";
-var password = "ReadyPlayerOne";
+var login_johnny = require('./login_module').login_johnny;
 
 var filepath = require('path').resolve("C:\\Users\\Michael\\Desktop\\nightwatch-testing\\assets\\3D_models\\head.obj");
 
@@ -16,13 +15,8 @@ var formObj = {
 
 module.exports = {
 	'Upload': function(browser) {
+		login_johnny(browser);
 		browser
-			.url("http://alpha-preview.cashew3d.com/login")
-			.waitForElementVisible('body', 1000, function() {
-				browser.assert.title('Log in');
-			})
-			.login(username, password)
-			.pause(1000)
 			.waitForElementVisible(sel.header.upload_link, 1000, function() {
 				browser.click(sel.header.upload_link);
 			})

@@ -10,20 +10,19 @@ var username = "johnnytests@matterandform.net";
 var password = "ReadyPlayerOne";
 
 var login_johnny = function(browser) {
-	browser.login(username, password);
+	browser
+		.url("http://alpha-preview.cashew3d.com/login")
+		.waitForElementVisible('body', 1000, function() {
+			browser.login(username, password);
+		})
+		.pause(1000);
 };
 
 module.exports = {
 	'Log in': function(browser) {
+		login_johnny(browser);
 		browser
-			.url("http://alpha-preview.cashew3d.com/login")
-			.waitForElementVisible('body', 1000, function() {
-				browser.assert.title('Log in');
-			})
-			.login("waffle", "potato", function() {
-				login_johnny(browser);
-			})
-			.pause(1000)
 			.end();
-	}
+	},
+	login_johnny: login_johnny
 };

@@ -1,6 +1,6 @@
 var sel = require('./../assets/selector_module.js');
 
-var filepath = require('path').resolve("C:\\Users\\Michael\\Desktop\\nightwatch-testing\\assets\\3D_models\\head.obj");
+var filepath = require('path').resolve("./../../../../assets/3D_models/head.obj");
 
 var formObj = {
 	title: "Waffle",

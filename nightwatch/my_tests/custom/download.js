@@ -7,7 +7,12 @@ exports.command = function (callback) {
 			this.click(sel.creations.creations_creation.action.save_button);
 		})
 		.waitForElementVisible(sel.creations.creations_creation.action.save_prompt.download_button, 1000, function () {
-			this.click(sel.creations.creations_creation.action.save_prompt.download_button);
+			this.pause(1000, function() {
+				this.click(sel.creations.creations_creation.action.save_prompt.download_button);
+			});
+		})
+		.waitForElementVisible(sel.creations.creations_creation.action.save_prompt.close_button, 1000, function() {
+			this.click(sel.creations.creations_creation.action.save_prompt.close_button);
 		})
 		.pause(1000)
 		.acceptAlert();

@@ -10,6 +10,7 @@ module.exports = {
 	'Form': function(browser) {
 		browser
 			.loginJohnny()
+			.pause(1000)
 			.waitForElementVisible(sel.profile.article.getNth_article(1), 1000, function() {
 				browser.click(sel.profile.article.getNth_article(1));
 			})

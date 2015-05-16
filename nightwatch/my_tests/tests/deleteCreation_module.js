@@ -12,6 +12,7 @@ module.exports = {
 						browser.pause(1000);
 					});
 				});
-			});
+			})
+			.end();
 	}
 };

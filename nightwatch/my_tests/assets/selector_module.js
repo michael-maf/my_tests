@@ -96,6 +96,16 @@ var creations = {
 				replace_button: "div[data-hook='action-replace-model']",
 				editPreview_button: "div[data-hook='action-edit-preview']",
 				deleteConfirm_button: "button[data-hook='close-button']"
+			},
+			save_prompt: {
+				close_button: "a[data-hook='close-button']",
+				download_button: "footer > button",
+				format: {
+					format_dropdown: "select[name='format']",
+					getNthFormat_link: function(n) {
+						return "select[name='format'] > option:nth-child(" + n + ")";
+					}
+				}
 			}
 		},
 		info: {

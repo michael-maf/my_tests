@@ -143,11 +143,11 @@ var login = {
 };
 
 var profile = {
-	avatar_image: "img[data-hook='avatar]'",
-	fullname_text: "div[class='user-info-name-holder] > h2 > span[data-hook='full_name']",
+	avatar_image: "img[data-hook='avatar']",
+	fullname_text: "div[class='user-info-name-holder'] > h2 > span[data-hook='full_name']",
 	creationsCount_text: "h3[data-hook='creations_count']",
 	creatingSince_text: "time[data-hook='date_created']",
-	//proudest creation? about?
+	// proudest creation? about?
 	logout_button: "a[href='/logout']",
 	article: newArticle("div[data-hook='creations']")
 };

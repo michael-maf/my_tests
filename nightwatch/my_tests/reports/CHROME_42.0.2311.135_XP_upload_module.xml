@@ -3,11 +3,11 @@
             failures="1"
             tests="1">
 
-  <testsuite name="download_module"
-    errors="0" failures="1" hostname="" id="" package="download_module" skipped="0"
-    tests="1" time="13.87" timestamp="Fri, 15 May 2015 21:56:52 GMT">
+  <testsuite name="upload_module"
+    errors="0" failures="1" hostname="" id="" package="upload_module" skipped="0"
+    tests="1" time="21.05" timestamp="Fri, 15 May 2015 21:57:46 GMT">
   
-    <testcase name="Download a model" time="13.87" assertions="7">
+    <testcase name="Upload" time="21.05" assertions="10">
 
     
 
@@ -19,7 +19,13 @@
 
     
 
-      <failure message="Timed out while waiting for element &lt;div[data-hook=&#39;creations&#39;] &gt; article:nth-child(1)&gt; to be present for 3000 milliseconds.">Timed out while waiting for element &lt;div[data-hook=&#39;creations&#39;] &gt; article:nth-child(1)&gt; to be present for 3000 milliseconds.: Expected &quot;visible&quot; but got: &quot;not found&quot;
+    
+
+    
+
+    
+
+      <failure message="Timed out while waiting for element &lt;button[data-hook=&#39;save&#39;]&gt; to be present for 10000 milliseconds.">Timed out while waiting for element &lt;button[data-hook=&#39;save&#39;]&gt; to be present for 10000 milliseconds.: Expected &quot;visible&quot; but got: &quot;not found&quot;
     at F.WaitForElement.fail (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\api\commands\_waitForElement.js:194:15)
     at F.WaitForElementPresent.elementNotFound (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\api\commands\waitForElementPresent.js:57:15)
     at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\api\commands\_waitForElement.js:221:17)
@@ -33,9 +39,6 @@
 
     
     </testcase>
-      <system-err>
-        Unable to locate element: &quot;div[data-hook=&#39;creations&#39;] &gt; article:nth-child(1)&quot; using: css selector
-      </system-err>
   
   
   </testsuite>

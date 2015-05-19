@@ -5,17 +5,35 @@
 
   <testsuite name="upload_module"
     errors="0" failures="1" hostname="" id="" package="upload_module" skipped="0"
-    tests="1" time="5.750" timestamp="Sat, 16 May 2015 00:53:50 GMT">
+    tests="1" time="23.73" timestamp="Tue, 19 May 2015 18:58:06 GMT">
   
-    <testcase name="Upload" time="5.750" assertions="1">  <failure message="Timed out while waiting for element &lt;a[href=&#39;/creations/new&#39;]&gt; to be visible for 1000 milliseconds.">Timed out while waiting for element &lt;a[href=&#39;/creations/new&#39;]&gt; to be visible for 1000 milliseconds.: Expected &quot;visible&quot; but got: &quot;not visible&quot;
-    at F.WaitForElement.fail (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\api\commands\_waitForElement.js:194:15)
-    at F.WaitForElementVisible.elementNotVisible (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\api\commands\waitForElementVisible.js:61:15)
-    at Object.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\api\commands\_waitForElement.js:238:17)
-    at HttpRequest.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\index.js:299:20)
+    <testcase name="Upload" time="23.73" assertions="10">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Timed out while waiting for element &lt;button[data-hook=&#39;save&#39;]&gt; to be present for 10000 milliseconds.">Timed out while waiting for element &lt;button[data-hook=&#39;save&#39;]&gt; to be present for 10000 milliseconds.: Expected &quot;visible&quot; but got: &quot;not found&quot;
+    at F.WaitForElement.fail (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\api\commands\_waitForElement.js:194:15)
+    at F.WaitForElementPresent.elementNotFound (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\api\commands\waitForElementPresent.js:57:15)
+    at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\api\commands\_waitForElement.js:221:17)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:299:20)
     at HttpRequest.emit (events.js:110:17)
-    at HttpRequest.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\index.js:322:15)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:346:15)
     at HttpRequest.emit (events.js:118:17)
-    at IncomingMessage.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\http\request.js:148:16)
+    at IncomingMessage.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\http\request.js:150:16)
     at IncomingMessage.emit (events.js:129:20)
     at _stream_readable.js:908:16</failure>
 

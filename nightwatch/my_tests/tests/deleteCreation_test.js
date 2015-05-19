@@ -3,7 +3,7 @@ var info = sel.creations.creations_creation.info;
 var action = sel.creations.creations_creation.action.edit;
 
 module.exports = {
-	'Delete Test': function(browser) {
+	'Delete a creation': function(browser) {
 		browser
 			.loginJohnny()
 			.waitForElementVisible(sel.profile.article.getNth_article(1), 1000, function() {

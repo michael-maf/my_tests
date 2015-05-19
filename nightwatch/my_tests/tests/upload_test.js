@@ -15,7 +15,7 @@ var formObj = {
 };
 
 module.exports = {
-	'Upload Test': function(browser) {
+	'Upload a creation then delete it': function(browser) {
 		browser
 			.loginJohnny()
 			.waitForElementVisible(sel.header.upload_link, 1000, function() {

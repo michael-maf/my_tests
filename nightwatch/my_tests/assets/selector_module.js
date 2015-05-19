@@ -23,7 +23,7 @@ var newTags = function(parent) {
 			return parent + " > div:nth-child(" + (n + 1) + ") > div > input";
 		},
 		getNthDelete_button: function(n) {
-			return parent + " > div:nth-child(" + (n + 1) + ") > div > button";
+			return parent + " > div:nth-child(" + (n + 2) + ") > div > button";
 		},
 		getNthTag_button: function(n) {
 			return parent + " > a:nth-child(" + n + ")";

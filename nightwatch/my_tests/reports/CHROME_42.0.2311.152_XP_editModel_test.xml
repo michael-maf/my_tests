@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="1"
+            failures="0"
             tests="1">
 
   <testsuite name="editModel_test"
-    errors="0" failures="1" hostname="" id="" package="editModel_test" skipped="0"
-    tests="1" time="18.65" timestamp="Tue, 19 May 2015 18:38:27 GMT">
+    errors="0" failures="0" hostname="" id="" package="editModel_test" skipped="0"
+    tests="1" time="23.34" timestamp="Tue, 19 May 2015 18:59:23 GMT">
   
-    <testcase name="Edit Model" time="18.65" assertions="23">
+    <testcase name="Edit Model" time="23.34" assertions="33">
 
     
 
@@ -49,29 +49,29 @@
 
     
 
-      <failure message="Failed [deepEqual]: (true deepEqual false)">Failed [deepEqual]: (true deepEqual false): Expected &quot;false&quot; but got: &quot;true&quot;
-    at Object.deepEqual (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\core\api.js:66:24)
-    at Object.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\my_tests\tests\editModel_test.js:17:21)
-    at Object.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\my_tests\custom\getInfo.js:50:30)
-    at HttpRequest.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\index.js:299:20)
-    at HttpRequest.emit (events.js:110:17)
-    at HttpRequest.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\index.js:322:15)
-    at HttpRequest.emit (events.js:118:17)
-    at IncomingMessage.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\http\request.js:148:16)
-    at IncomingMessage.emit (events.js:129:20)
-    at _stream_readable.js:908:16</failure>
+    
 
-      <failure message="Failed [deepEqual]: (&#39;Creative Commons Attribution&#39; deepEqual 2)">Failed [deepEqual]: (&#39;Creative Commons Attribution&#39; deepEqual 2): Expected &quot;2&quot; but got: &quot;Creative Commons Attribution&quot;
-    at Object.deepEqual (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\core\api.js:66:24)
-    at Object.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\my_tests\tests\editModel_test.js:17:21)
-    at Object.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\my_tests\custom\getInfo.js:50:30)
-    at HttpRequest.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\index.js:299:20)
-    at HttpRequest.emit (events.js:110:17)
-    at HttpRequest.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\index.js:322:15)
-    at HttpRequest.emit (events.js:118:17)
-    at IncomingMessage.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\http\request.js:148:16)
-    at IncomingMessage.emit (events.js:129:20)
-    at _stream_readable.js:908:16</failure>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
     </testcase>

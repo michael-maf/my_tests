@@ -8,10 +8,6 @@ module.exports = {
 		browser
 			.loginJohnny()
 			.clickElement(sel.profile.article.getNth_article(1))
-			.execute(function(title) { return document.querySelector(title).innerText; }, [info.title_text],
-				function(result) {
-					browser.assert.title(result.value);
-				})
 			.clickElement(info.edit.edit_button)
 			.assert.visible(info.edit.save_button)
 			.assert.visible(info.edit.cancel_button)

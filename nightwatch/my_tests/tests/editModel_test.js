@@ -1,13 +1,15 @@
 var sel = require('./../assets/selector_module');
+var info = sel.creations.creations_creation.info;
 
 module.exports = {
 	'Edit Model' : function(browser) {
 		browser
 			.loginJohnny()
-			.clickElement(sel.header.explore_link)
-			.clickElement(sel.creations.article.getNth_article(1))
-			.clickElement(sel.creations.creations_creation.bigger_button)
-			.pause(1000)
-			.execute("scrollTo(0, 3000)");
+			.clickElement(sel.profile.article.getNth_article(1))
+			.clickElement(info.edit.edit_button)
+			.fillForm("Potato", "Tomato", ["wasd", "potato", "ham"], false, 2)
+			.clickElement(info.edit.save_button)
+			.pause(10000)
+			.end();
 	}
 };

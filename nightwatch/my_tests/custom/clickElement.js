@@ -4,9 +4,9 @@ exports.command = function (css, callback) {
     var self = this;
 
     this.waitForElementVisible(css, 1000, function() {
-    	this.click(css, function() {
-    		this.pause(500);
-    	});
+    	this
+    		.pause(1000)
+    		.click(css, function() { this.pause(500) });
     });
 
     if (typeof callback === "function")

@@ -26,10 +26,11 @@ exports.command = function (callback) {
             data.push(result.value);
         })
         .execute(function() {
-            var privacy = document.querySelector("span[creation-privacy-icon]");
+            var privacy = document.querySelector("span[class='creation-privacy-icon']");
             if(privacy)
                 return false;
-            return true;
+            else
+                return true;
         }, [], function(result) {
             data.push(result.value);
         })

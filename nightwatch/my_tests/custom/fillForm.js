@@ -37,8 +37,13 @@ exports.command = function(title, description, tags, public, license, callback) 
 		})
 		//tags
 		.waitForElementVisible(form.tags.getNthTag_field(1), 1000, function() {
-			if(tags)
-				tagRecurse(1, tags.length, this);			
+			this.execute(function(deleteButton) {
+				while (document.querySelector(deleteButton))
+					document.querySelector(deleteButton).click();
+			}, [form.tags.getNthDelete_button(1)], function() {
+				if(tags)
+					tagRecurse(1, tags.length, this);
+			});
 		})
 		//privacy
 		.waitForElementVisible(form.privacy.public_button, 1000, function() {

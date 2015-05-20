@@ -90,6 +90,9 @@ var creations = {
 				getNthLike_link: function(n) {
 					return "div[class='user-list'] > article:nth-child(" + n + ") > a";
 				},
+				getNthLike_text: function(n) {
+					return "div[class='user-list'] > article:nth-child(" + n + ") > a > div > div > h3"
+				},
 				close_button: "a[data-hook='close-button']"
 			},
 			edit: {

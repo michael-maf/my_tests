@@ -4,7 +4,7 @@ var qbuttonSmaller = sel.creations.creations_creation.preview.quality.qualitySma
 var currentFaces, newFaces = 0;
 
 module.exports = {
-	'Quality change test: Medium to low' : function (browser) {
+	'Quality change : low to medium to high; Change size then quality : low to medium to high' : function (browser) {
 		browser
 			.loginJohnny()
 			.waitForElementVisible(sel.profile.article.getNth_article(1), 1000, function() {
@@ -22,7 +22,13 @@ module.exports = {
 					browser.pause(1000)
 				})
 				.getText(sel.creations.creations_creation.info.geometryCount_text, function (result) {
-					browser.assert.equal(result.value, 5176);
+					browser.assert.equal(result.value, 32768);
+				})
+				browser.qualityChange(3, function() {
+					browser.pause(1000)
+				})
+				.getText(sel.creations.creations_creation.info.geometryCount_text, function (result) {
+					browser.assert.equal(result.value, 109113);
 				})
 				.assert.visible(sel.creations.creations_creation.action.nice_button)
 				.assert.visible(sel.creations.creations_creation.action.comment_button)

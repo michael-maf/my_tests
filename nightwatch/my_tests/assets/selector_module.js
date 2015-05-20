@@ -81,6 +81,7 @@ var creations = {
 		},
 		action: {
 			nice_button: "div[data-hook='action-nice']",
+			niceClose_button: "button[data-hook='close-button']",//if not logged in
 			comment_button: "div[data-hook='action-comment']",
 			share_button: "div[data-hook='action-social']",
 			save_button: "div[data-hook='action-save']",

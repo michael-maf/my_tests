@@ -5,11 +5,9 @@
 
   <testsuite name="editModel_test"
     errors="0" failures="0" hostname="" id="" package="editModel_test" skipped="0"
-    tests="1" time="22.14" timestamp="Tue, 19 May 2015 19:17:45 GMT">
+    tests="1" time="21.26" timestamp="Wed, 20 May 2015 13:57:57 GMT">
   
-    <testcase name="Edit Model" time="22.14" assertions="33">
-
-    
+    <testcase name="Edit Model" time="21.26" assertions="32">
 
     
 

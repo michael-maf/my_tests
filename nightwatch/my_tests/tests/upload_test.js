@@ -14,6 +14,8 @@ var formObj = {
 	callback: undefined
 };
 
+var details = [formObj.title, formObj.description, formObj.tags, formObj.public, formObj.license];
+
 module.exports = {
 	'Upload a creation then delete it': function(browser) {
 		browser
@@ -23,11 +25,11 @@ module.exports = {
 			})
 			.upload(filepath, formObj)
 			.waitForElementNotPresent(sel.upload.details_prompt.waiting_text, 30000)
-			.getText(sel.creations.creations_creation.info.title_text, function(result) {
-				browser.assert.equal(result.value, formObj.title);
-			})
-			.getText(sel.creations.creations_creation.info.description_text, function(result) {
-				browser.assert.equal(result.value, formObj.description);
+			.getInfo(function(title, desc, tags, public, license) {
+				console.log(title, desc, tags, public, license);
+				for(var i = 0; i < arguments.length - 1; i++)
+					browser.assert.equal(arguments[i], details[i]);
+				browser.assert.equal(arguments[arguments.length - 1], "Creative Commons Attribution-ShareAlike");
 			})
 			.assert.title(formObj.title)
 			browser.deleteCreation(function() {

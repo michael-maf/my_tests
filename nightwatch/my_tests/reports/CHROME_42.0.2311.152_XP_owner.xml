@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="owner"
+    errors="0" failures="1" hostname="" id="" package="owner" skipped="0"
+    tests="1" time="13.41" timestamp="Wed, 20 May 2015 21:08:46 GMT">
+  
+    <testcase name="Check if we own a model on creations page" time="13.41" assertions="9">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Failed [deepEqual]: (&#39;Johnny tester&#39; deepEqual &#39;Travis Hagelberg&#39;)">Failed [deepEqual]: (&#39;Johnny tester&#39; deepEqual &#39;Travis Hagelberg&#39;): Expected &quot;Travis Hagelberg&quot; but got: &quot;Johnny tester&quot;
+    at Object.deepEqual (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\core\api.js:66:24)
+    at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\my_tests\tests\owner.js:15:20)
+    at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\api\element-commands.js:351:24)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:299:20)
+    at HttpRequest.emit (events.js:110:17)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:322:15)
+    at HttpRequest.emit (events.js:118:17)
+    at IncomingMessage.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\http\request.js:148:16)
+    at IncomingMessage.emit (events.js:129:20)
+    at _stream_readable.js:908:16</failure>
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

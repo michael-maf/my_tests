@@ -3,11 +3,11 @@
  /* Specify the location of your nightwatch-testing folder until we learn how to use relative file path
     E.g., C:/Users/Michael/...
  */
- var filepath = require('path').resolve(userDir + "/nightwatch-testing/my_tests/assets/3D_models/head.obj");
+ var filepath = require('path').resolve(userDir + "/nightwatch-testing/my_tests/assets/3D_models/drewsdog.obj");
 
 var formObj = {
-	title: "Cats",
-	description: "I like cats lol meow :P !!!",
+	title: "Doge",
+	description: ":P !!!",
 	tags: ["tuna","cat food","birds","fabulous"],
 	public: false,
 	license: 3,
@@ -23,13 +23,20 @@ module.exports = {
 			.waitForElementVisible(sel.header.upload_link, 1000, function() {
 				browser.click(sel.header.upload_link);
 			})
-			.upload(filepath, formObj)
-			.waitForElementNotPresent(sel.upload.details_prompt.waiting_text, 30000)
-			.getInfo(function(title, desc, tags, public, license) {
-				console.log(title, desc, tags, public, license);
-				for(var i = 0; i < arguments.length - 1; i++)
-					browser.assert.equal(arguments[i], details[i]);
-				browser.assert.equal(arguments[arguments.length - 1], "Creative Commons Attribution-ShareAlike");
+			.upload(filepath, formObj, function() {
+				browser
+					.waitForElementPresent("a[data-hook='close-button']", 1000, false, function(present) {
+						if(present)
+							browser.clickElement("a[data-hook='close-button']")
+					})
+					.pause(1000)
+					.clickElement(sel.profile.article.getNth_article(1))
+					.getInfo(function(title, desc, tags, public, license) {
+						console.log(title, desc, tags, public, license);
+						for(var i = 0; i < arguments.length - 1; i++)
+							browser.assert.deepEqual(arguments[i], details[i]);
+						browser.assert.deepEqual(arguments[arguments.length - 1], "Creative Commons Attribution-ShareAlike");
+					});
 			})
 			.assert.title(formObj.title)
 			browser.deleteCreation(function() {

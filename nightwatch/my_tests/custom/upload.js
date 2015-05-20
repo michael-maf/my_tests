@@ -10,9 +10,12 @@ exports.command = function(fileIn, formIn, callback) {
 		.waitForElementVisible(upl.upload_button, 1000, function() {
 			this.click(upl.upload_button);
 		})
-		.waitForElementVisible(sel.upload.details_prompt.save_button, 10000, function() {
+		.waitForElementVisible(sel.upload.details_prompt.save_button, 1000, function() {
 			this.fillForm(formIn.title, formIn.description, formIn.tags, formIn.public, formIn.license,  function() {
-				this.click(sel.upload.details_prompt.save_button);
+				this
+					.waitForElementNotPresent("button[data-hook='save']:disabled", 60000, function() {
+						this.clickElement(sel.upload.details_prompt.save_button);
+					});
 			});
 		})
 		.pause(1000);

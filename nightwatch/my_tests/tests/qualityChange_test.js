@@ -10,7 +10,6 @@ module.exports = {
 			.waitForElementVisible(sel.profile.article.getNth_article(1), 1000, function() {
 				browser.click(sel.creations.article.getNth_article(1));
 			})
-			
 			.waitForElementVisible(qbuttonBigger, 1000, function() {
 				browser.qualityChange(1, function() {
 					browser.pause(1000);

@@ -5,9 +5,9 @@
 
   <testsuite name="owner"
     errors="0" failures="1" hostname="" id="" package="owner" skipped="0"
-    tests="1" time="13.41" timestamp="Wed, 20 May 2015 21:08:46 GMT">
+    tests="1" time="13.14" timestamp="Wed, 20 May 2015 21:45:59 GMT">
   
-    <testcase name="Check if we own a model on creations page" time="13.41" assertions="9">
+    <testcase name="Check if we own a model on creations page" time="13.14" assertions="9">
 
     
 
@@ -23,7 +23,7 @@
 
     
 
-      <failure message="Failed [deepEqual]: (&#39;Johnny tester&#39; deepEqual &#39;Travis Hagelberg&#39;)">Failed [deepEqual]: (&#39;Johnny tester&#39; deepEqual &#39;Travis Hagelberg&#39;): Expected &quot;Travis Hagelberg&quot; but got: &quot;Johnny tester&quot;
+      <failure message="Failed [deepEqual]: (&#39;Johnny tester&#39; deepEqual &#39;Christina CK&#39;)">Failed [deepEqual]: (&#39;Johnny tester&#39; deepEqual &#39;Christina CK&#39;): Expected &quot;Christina CK&quot; but got: &quot;Johnny tester&quot;
     at Object.deepEqual (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\core\api.js:66:24)
     at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\my_tests\tests\owner.js:15:20)
     at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\api\element-commands.js:351:24)

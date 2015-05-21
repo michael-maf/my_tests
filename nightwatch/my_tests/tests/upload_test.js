@@ -6,8 +6,8 @@
  var filepath = require('path').resolve(userDir + "/nightwatch-testing/my_tests/assets/3D_models/drewsdog.obj");
 
 var formObj = {
-	title: "Doge",
-	description: ":P !!!",
+	title: "Drew's Cute Dog",
+	description: "MOO!!!!! :3",
 	tags: ["tuna","cat food","birds","fabulous"],
 	public: false,
 	license: 3,

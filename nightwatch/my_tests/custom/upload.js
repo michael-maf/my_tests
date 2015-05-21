@@ -5,7 +5,15 @@ exports.command = function(fileIn, formIn, callback) {
 	var self = this;
 	this
 		.waitForElementVisible(upl.dropzone_text, 1000)
-		.setValue(upl.dropzone_input, fileIn)
+		.execute(function() {
+			document.querySelector("input[type='file']").style="opacity:1;display:block;visibility:visible;width:1;height:1;";
+			return document.querySelector("input[type='file']");
+		}, [], function() {
+			this
+			.waitForElementVisible(upl.dropzone_input, 1000, function() {
+				this.setValue(upl.dropzone_input, fileIn);
+			});
+		})
 		.pause(1000)
 		.waitForElementVisible(upl.upload_button, 1000, function() {
 			this.click(upl.upload_button);

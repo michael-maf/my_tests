@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="upload_test"
+    errors="0" failures="1" hostname="" id="" package="upload_test" skipped="0"
+    tests="1" time="48.12" timestamp="Thu, 21 May 2015 22:53:48 GMT">
+  
+    <testcase name="Upload a creation then delete it" time="48.12" assertions="31">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Failed [deepEqual]: (&#39;Cats&#39; deepEqual &#39;Drew\&#39;s Cute Dog&#39;)">Failed [deepEqual]: (&#39;Cats&#39; deepEqual &#39;Drew\&#39;s Cute Dog&#39;): Expected &quot;Drew&#39;s Cute Dog&quot; but got: &quot;Cats&quot;
+    at Object.deepEqual (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\core\api.js:66:24)
+    at Object.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\my_tests\tests\upload_test.js:39:23)
+    at Object.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\my_tests\custom\getInfo.js:51:30)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\index.js:299:20)
+    at HttpRequest.emit (events.js:110:17)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\index.js:322:15)
+    at HttpRequest.emit (events.js:118:17)
+    at IncomingMessage.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\http\request.js:148:16)
+    at IncomingMessage.emit (events.js:129:20)
+    at _stream_readable.js:908:16</failure>
+
+      <failure message="Failed [deepEqual]: (&#39;I like cats lol meow :P !!!&#39; deepEqual &#39;MOO!!!!! :3&#39;)">Failed [deepEqual]: (&#39;I like cats lol meow :P !!!&#39; deepEqual &#39;MOO!!!!! :3&#39;): Expected &quot;MOO!!!!! :3&quot; but got: &quot;I like cats lol meow :P !!!&quot;
+    at Object.deepEqual (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\core\api.js:66:24)
+    at Object.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\my_tests\tests\upload_test.js:39:23)
+    at Object.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\my_tests\custom\getInfo.js:51:30)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\index.js:299:20)
+    at HttpRequest.emit (events.js:110:17)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\index.js:322:15)
+    at HttpRequest.emit (events.js:118:17)
+    at IncomingMessage.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\http\request.js:148:16)
+    at IncomingMessage.emit (events.js:129:20)
+    at _stream_readable.js:908:16</failure>
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

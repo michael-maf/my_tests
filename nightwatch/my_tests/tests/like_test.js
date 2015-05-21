@@ -29,6 +29,9 @@ module.exports = {
 				browser.assert.equal(result.value, likecount);
 			})
 			.pause(10000)
+			.clickElement(sel.header.profile_link)
+			.assert.visible(sel.profile.logout_button)
+			.clickElement(sel.profile.logout_button)
 			.end();
 	}
 };

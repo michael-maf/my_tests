@@ -5,9 +5,9 @@
 
   <testsuite name="upload_test"
     errors="0" failures="1" hostname="" id="" package="upload_test" skipped="0"
-    tests="1" time="41.97" timestamp="Wed, 20 May 2015 19:35:40 GMT">
+    tests="1" time="11.66" timestamp="Thu, 21 May 2015 21:44:36 GMT">
   
-    <testcase name="Upload a creation then delete it" time="41.97" assertions="30">
+    <testcase name="Upload a creation then delete it" time="11.66" assertions="10">
 
     
 
@@ -25,85 +25,15 @@
 
     
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-      <failure message="Failed [deepEqual]: (&#39;Drewsdog&#39; deepEqual &#39;Doge&#39;)">Failed [deepEqual]: (&#39;Drewsdog&#39; deepEqual &#39;Doge&#39;): Expected &quot;Doge&quot; but got: &quot;Drewsdog&quot;
-    at Object.deepEqual (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\core\api.js:66:24)
-    at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\my_tests\tests\upload_test.js:37:23)
-    at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\my_tests\custom\getInfo.js:51:30)
-    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:299:20)
+      <failure message="Timed out while waiting for element &lt;button[data-hook=&#39;save&#39;]&gt; to be present for 1000 milliseconds.">Timed out while waiting for element &lt;button[data-hook=&#39;save&#39;]&gt; to be present for 1000 milliseconds.: Expected &quot;visible&quot; but got: &quot;not found&quot;
+    at F.WaitForElement.fail (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\api\commands\_waitForElement.js:194:15)
+    at F.WaitForElementPresent.elementNotFound (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\api\commands\waitForElementPresent.js:57:15)
+    at Object.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\api\commands\_waitForElement.js:221:17)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\index.js:299:20)
     at HttpRequest.emit (events.js:110:17)
-    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:322:15)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\index.js:322:15)
     at HttpRequest.emit (events.js:118:17)
-    at IncomingMessage.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\http\request.js:148:16)
-    at IncomingMessage.emit (events.js:129:20)
-    at _stream_readable.js:908:16</failure>
-
-      <failure message="Failed [deepEqual]: (&#39;Drew\&#39;s cute, green dog. Woof!&#39; deepEqual &#39;:P !!!&#39;)">Failed [deepEqual]: (&#39;Drew\&#39;s cute, green dog. Woof!&#39; deepEqual &#39;:P !!!&#39;): Expected &quot;:P !!!&quot; but got: &quot;Drew&#39;s cute, green dog. Woof!&quot;
-    at Object.deepEqual (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\core\api.js:66:24)
-    at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\my_tests\tests\upload_test.js:37:23)
-    at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\my_tests\custom\getInfo.js:51:30)
-    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:299:20)
-    at HttpRequest.emit (events.js:110:17)
-    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:322:15)
-    at HttpRequest.emit (events.js:118:17)
-    at IncomingMessage.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\http\request.js:148:16)
-    at IncomingMessage.emit (events.js:129:20)
-    at _stream_readable.js:908:16</failure>
-
-      <failure message="Failed [deepEqual]: ([ &#39;fetch&#39;, &#39;moo&#39;, &#39;goldfish&#39;, &#39;DoritosSweetChiliHeat&#39; ] deepEqual [ &#39;tuna&#39;, &#39;cat food&#39;, &#39;birds&#39;, &#39;fabulous&#39; ])">Failed [deepEqual]: ([ &#39;fetch&#39;, &#39;moo&#39;, &#39;goldfish&#39;, &#39;DoritosSweetChiliHeat&#39; ] deepEqual [ &#39;tuna&#39;, &#39;cat food&#39;, &#39;birds&#39;, &#39;fabulous&#39; ]): Expected &quot;tuna,cat food,birds,fabulous&quot; but got: &quot;fetch,moo,goldfish,DoritosSweetChiliHeat&quot;
-    at Object.deepEqual (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\core\api.js:66:24)
-    at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\my_tests\tests\upload_test.js:37:23)
-    at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\my_tests\custom\getInfo.js:51:30)
-    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:299:20)
-    at HttpRequest.emit (events.js:110:17)
-    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:322:15)
-    at HttpRequest.emit (events.js:118:17)
-    at IncomingMessage.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\http\request.js:148:16)
-    at IncomingMessage.emit (events.js:129:20)
-    at _stream_readable.js:908:16</failure>
-
-    
-
-      <failure message="Failed [deepEqual]: (&#39;All Rights Reserved&#39; deepEqual &#39;Creative Commons Attribution-ShareAlike&#39;)">Failed [deepEqual]: (&#39;All Rights Reserved&#39; deepEqual &#39;Creative Commons Attribution-ShareAlike&#39;): Expected &quot;Creative Commons Attribution-ShareAlike&quot; but got: &quot;All Rights Reserved&quot;
-    at Object.deepEqual (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\core\api.js:66:24)
-    at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\my_tests\tests\upload_test.js:38:22)
-    at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\my_tests\custom\getInfo.js:51:30)
-    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:299:20)
-    at HttpRequest.emit (events.js:110:17)
-    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:322:15)
-    at HttpRequest.emit (events.js:118:17)
-    at IncomingMessage.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\http\request.js:148:16)
+    at IncomingMessage.&lt;anonymous&gt; (C:\Users\Michael\Desktop\nightwatch-testing\nightwatch\lib\http\request.js:148:16)
     at IncomingMessage.emit (events.js:129:20)
     at _stream_readable.js:908:16</failure>
 

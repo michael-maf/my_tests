@@ -110,6 +110,14 @@ var creations = {
 						return "select[name='format'] > option:nth-child(" + n + ")";
 					}
 				}
+			},
+			share_prompt: {
+				embed_link: "h4[data-tab='embed']",
+				share_link: "h4[data-tab='share']",
+				embed_text: "textarea",
+				tumblr_button: "a[data-network='tumblr']",
+				facebook_button: "a[data-network='facebook']",
+				twitter_button: "a[data-network='twitter']"
 			}
 		},
 		info: {

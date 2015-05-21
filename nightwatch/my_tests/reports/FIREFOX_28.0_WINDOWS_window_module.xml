@@ -5,9 +5,9 @@
 
   <testsuite name="window_module"
     errors="0" failures="0" hostname="" id="" package="window_module" skipped="0"
-    tests="1" time="25.73" timestamp="Thu, 21 May 2015 16:35:25 GMT">
+    tests="1" time="71.34" timestamp="Thu, 21 May 2015 16:36:06 GMT">
   
-    <testcase name="share" time="25.73" assertions="9">
+    <testcase name="share" time="71.34" assertions="9">
 
     
 

@@ -20,8 +20,13 @@ module.exports = {
 					likecount = parseInt(result.value);
 			})
 			.clickElement(action.nice_button)
+			//assuming the user hasn't liked the model
 			.getText(action.nice_prompt.niceCount_button, function(result) {
-				browser.assert.deepEqual(++result.value, likecount);
+				browser.assert.deepEqual(result.value, 1+likecount);
+			})
+			.clickElement(action.nice_button)
+			.getText(action.nice_prompt.niceCount_button, function(result) {
+				browser.assert.equal(result.value, likecount);
 			})
 			.pause(10000)
 			.end();

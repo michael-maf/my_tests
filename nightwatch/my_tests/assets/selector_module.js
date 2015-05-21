@@ -114,6 +114,7 @@ var creations = {
 			share_prompt: {
 				embed_link: "h4[data-tab='embed']",
 				share_link: "h4[data-tab='share']",
+				close_button: "a[data-hook='close_button']",
 				embed_text: "textarea",
 				tumblr_button: "a[data-network='tumblr']",
 				facebook_button: "a[data-network='facebook']",

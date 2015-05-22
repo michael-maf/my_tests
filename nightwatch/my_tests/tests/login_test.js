@@ -14,6 +14,7 @@ module.exports = {
 			.assert.visible(sel.profile.creationsCount_text)
 			.assert.visible(sel.profile.creatingSince_text)
 			.assert.visible(sel.profile.logout_button)
+			.clickElement(sel.profile.logout_button)
 			.end();
 	}
 };

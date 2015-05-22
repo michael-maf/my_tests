@@ -1,9 +1,11 @@
  var sel = require('./../assets/selector_module.js');
- var userDir = "C:/Users/Muhammad/Desktop" 
+ var path = require("path");
+ //var userDir = "C:/Users/Muhammad/Desktop" 
  /* Specify the location of your nightwatch-testing folder until we learn how to use relative file path
     E.g., C:/Users/Michael/...
  */
- var filepath = require('path').resolve(userDir + "/nightwatch-testing/my_tests/assets/3D_models/drewsdog.obj");
+ var filepath = path.join(__dirname, "..", "assets", "drewsdog.obj");
+ console.log(filepath);
 
 var formObj = {
 	title: "Drew's Cute Dog",

@@ -6,14 +6,15 @@
   "globals_path" : "./globals.js",
 
   "selenium" : {
-    "start_process" : false,
+    "start_process" : true,
     "server_path" : "./bin/selenium-server.jar"
   },
 
   "test_settings" : {
     "default" : {
-      "silent" : true,
+	"silent" : true,
       "desiredCapabilities" : {
+		"firefox_profile" : "webdriver",
         "browserName" : "firefox",
         "javascriptEnabled" : true,
         "acceptSslCerts" : true

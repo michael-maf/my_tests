@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="1">
+
+  <testsuite name="deleteCreation_module"
+    errors="1" failures="1" hostname="" id="" package="deleteCreation_module" skipped="0"
+    tests="1" time="9.887" timestamp="Fri, 22 May 2015 15:46:48 GMT">
+  
+    <testcase name="Delete" time="9.887" assertions="6">
+
+    
+
+    
+
+    
+
+      <failure message="Timed out while waiting for element &lt;button[data-hook=&#39;close-button&#39;]&gt; to be present for 1000 milliseconds.">Timed out while waiting for element &lt;button[data-hook=&#39;close-button&#39;]&gt; to be present for 1000 milliseconds.: Expected &quot;found&quot; but got: &quot;not found&quot;
+    at F.WaitForElement.fail (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\api\commands\_waitForElement.js:194:15)
+    at F.WaitForElementPresent.elementNotFound (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\api\commands\waitForElementPresent.js:57:15)
+    at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\api\commands\_waitForElement.js:221:17)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:299:20)
+    at HttpRequest.emit (events.js:110:17)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:322:15)
+    at HttpRequest.emit (events.js:118:17)
+    at IncomingMessage.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\http\request.js:148:16)
+    at IncomingMessage.emit (events.js:129:20)
+    at _stream_readable.js:908:16</failure>
+
+      <failure message="Testing if the page title equals &quot;Profile&quot;.">Testing if the page title equals &quot;Profile&quot;.: Expected &quot;Profile&quot; but got: &quot;Log in&quot;
+    at Object.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\core\assertion.js:105:19)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:299:20)
+    at HttpRequest.emit (events.js:110:17)
+    at HttpRequest.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\index.js:322:15)
+    at HttpRequest.emit (events.js:118:17)
+    at IncomingMessage.&lt;anonymous&gt; (C:\Users\Muhammad\desktop\nightwatch-testing\my_tests\nightwatch\lib\http\request.js:148:16)
+    at IncomingMessage.emit (events.js:129:20)
+    at _stream_readable.js:908:16
+    at process._tickCallback (node.js:355:11)</failure>
+
+    
+    </testcase>
+      <system-err>
+        Unable to locate element: &quot;button[data-hook=&#39;close-button&#39;]&quot; using: css selector
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>

@@ -9,6 +9,7 @@ module.exports = {
 			console.log(full, user);
 			browser.assert.notDeepEqual(full, user);
 		})
+		.pause(5000)
 		.end();
 	}
 };

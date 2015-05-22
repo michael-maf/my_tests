@@ -9,15 +9,15 @@
   "disable_colors": false,
 
   "selenium" : {
-    "start_process" : false,
-    "server_path" : "",
+    "start_process" : true,
+    "server_path" : "./bin/selenium-server-standalone-2.45.0.jar",
     "log_path" : "",
     "host" : "127.0.0.1",
     "port" : 4444,
     "cli_args" : {
-      "webdriver.chrome.driver" : "./assets/chromeDriver_win32/",
-      "webdriver.ie.driver" : "./assets/IEDriverServer_Win32_2.45.0/",
-      "webdriver.firefox.profile" : ""
+      "webdriver.chrome.driver" : "",
+      "webdriver.ie.driver" : "",
+      "webdriver.firefox.profile" : "webdriver"
     }
   },
 

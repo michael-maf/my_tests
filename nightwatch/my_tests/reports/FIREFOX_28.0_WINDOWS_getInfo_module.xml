@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="getInfo_module"
+    errors="0" failures="0" hostname="" id="" package="getInfo_module" skipped="0"
+    tests="1" time="32.68" timestamp="Fri, 22 May 2015 15:34:34 GMT">
+  
+    <testcase name="Get Info" time="32.68" assertions="8">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>

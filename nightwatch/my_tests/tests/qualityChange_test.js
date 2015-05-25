@@ -46,7 +46,8 @@ module.exports = {
 				.qualityChange(2)
 				.qualityChange(1)
 			})
-			.pause(5000)
+			.clickElement(sel.creations.creations_creation.preview.smaller_button)
+			.logout()
 			.end();
   }
 }

@@ -42,7 +42,7 @@ module.exports = {
 			.getText(sel.creations.creations_creation.info.title_text, function(result) {
 				browser.assert.deepEqual(result.value, currentModel);
 			})
-			.pause(10000)
+			.logout()
 			.end();
 	}
 };

@@ -10,6 +10,7 @@ module.exports = {
 			browser.assert.notDeepEqual(full, user);
 		})
 		.pause(5000)
+		.logout()
 		.end();
 	}
 };

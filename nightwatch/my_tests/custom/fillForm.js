@@ -57,7 +57,8 @@ exports.command = function(title, description, tags, public, license, callback) 
 		//license
 		.waitForElementVisible(form.license, 1000, function() {
 			this.click(form.license, function() {
-				this.click(form.getNthLicense_link(license));
+				this.click(form.getNthLicense_link(license))
+				.keys('\uE007');
 			});
 		});
 	if(typeof callback === "function")

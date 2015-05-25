@@ -18,7 +18,7 @@ exports.command = function(callback) {
 		.waitForElementVisible(editAction.deleteConfirm_button, 1000, function() {
 			this.click(editAction.deleteConfirm_button);
 		})
-		.pause(2000);
+		.pause(1000);
 
 
 	if(typeof callback === "function")

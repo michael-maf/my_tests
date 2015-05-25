@@ -14,9 +14,7 @@ exports.command = function(username, password, callback) {
 				this.setValue(log_sel.password_field, password);
 			});
 		})
-		.waitForElementVisible(log_sel.login_button, 1000, function() {
-			this.click(log_sel.login_button);
-		})
+		this.clickElement(log_sel.login_button)
 		.waitForElementPresent(log_sel.login_prompt.close_button, 1000, false, function(present) {
 			if(present)
 				this.click(log_sel.login_prompt.close_button);

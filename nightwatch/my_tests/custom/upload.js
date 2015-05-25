@@ -6,7 +6,7 @@ exports.command = function(fileIn, formIn, callback) {
 	this
 		.waitForElementVisible(upl.dropzone_text, 1000)
 		.execute(function() {
-			document.querySelector("input[type='file']").style="opacity:1;display:block;visibility:visible;width:1;height:1;";
+			document.querySelector("input[type='file']").setAttribute("style","opacity:1;display:block;visibility:visible;width:1;height:1;");
 			return document.querySelector("input[type='file']");
 		}, [], function() {
 			this
@@ -25,9 +25,7 @@ exports.command = function(fileIn, formIn, callback) {
 						this.clickElement(sel.upload.details_prompt.save_button);
 					});
 			});
-		})
-		.pause(1000);
-		
+		});		
 
 	if(typeof callback === "function")
 		callback.call(self);

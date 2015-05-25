@@ -27,6 +27,7 @@ module.exports = {
 				browser.assert.deepEqual(arguments[arguments.length - 1], "Creative Commons Attribution");
 			})
 			.pause(1000)
+			.logout()
 			.end();
 	}
 };

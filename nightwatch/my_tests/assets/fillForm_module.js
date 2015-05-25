@@ -1,8 +1,3 @@
-/*
-	Michael Bahng 5/14/2015
-	functions for the login page for the Alpha cashew website.
-*/
-
 var sel = require('./../assets/selector_module');
 var log_sel = sel.login;
 

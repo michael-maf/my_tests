@@ -1,8 +1,3 @@
-/*
-	Muhammad Mousa 5/19/2015
-	Test for the login page on the alpha Cashew website.
-*/
-
 var sel = require('./../assets/selector_module.js');
 
 module.exports = {
